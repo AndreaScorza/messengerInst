@@ -48,5 +48,5 @@ to edit the crontab file.
 
 add the following line to execute the script every hour
 ```
-0 * * * * /usr/bin/python3 /path/to/your/script.py
+0 * * * * /usr/bin/python3 /path/to/your/script.py >> /path/to/log/file/log.txt
 ```
