@@ -50,3 +50,6 @@ add the following line to execute the script every hour
 ```
 0 * * * * /usr/bin/python3 /path/to/your/script.py >> /path/to/log/file/log.txt
 ```
+
+##### Stop receiving notification for specific contacts
+To stop receiving notifications from specific contacts on your messaging platform, you can create a file called `unwanted.txt` and add the names of the senders you want to block, with each name on a separate line.

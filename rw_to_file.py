@@ -30,3 +30,15 @@ class StringArrayFile:
     
     def contains(self, string):
         return string in self.string_array
+    
+    def is_unwanted(self, sender):
+        try:
+            with open("unwanted.txt", "r") as f:
+                for line in f:
+                    if sender in line:
+                        return True
+        except FileNotFoundError:
+            pass
+        return False
+
+
