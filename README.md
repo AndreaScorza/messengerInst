@@ -53,3 +53,5 @@ add the following line to execute the script every hour
 
 ##### Stop receiving notification for specific contacts
 To stop receiving notifications from specific contacts on your messaging platform, you can create a file called `unwanted.txt` and add the names of the senders you want to block, with each name on a separate line.
+
+NB: Crontab might create the `data.txt` and look for the `unwanted.txt` files at the `/home/username/` level
