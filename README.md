@@ -1,6 +1,9 @@
 # messengerInst
 This bot forward the received message from instagram to a telegram chat
 
+To install the requirements
+
+pip intall -r requirements.txt
 
 add a .env file with <br>
 
