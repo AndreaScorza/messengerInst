@@ -25,3 +25,28 @@ In the `inst_module` file, replace the line `driver = webdriver.Chrome()` with:
 ```python
 driver = webdriver.Chrome(‘/usr/lib/chromium-browser/chromedriver’)
 ```
+
+To run the script using `Cron` you will need to install the `virtual display`:
+
+```
+pip3 install pyvirtualdisplay
+```
+
+and add it to the main file
+
+```python
+from pyvirtualdisplay import Display
+display = Display(visible=0, size=(800, 600))
+display.start()
+```
+
+From the `pi` open the terminal and type
+```
+crontab -e
+```
+to edit the crontab file.
+
+add the following line to execute the script every hour
+```
+0 * * * * /usr/bin/python3 /path/to/your/script.py
+```

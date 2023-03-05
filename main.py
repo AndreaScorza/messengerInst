@@ -17,4 +17,4 @@ for message in messages:
     if (not file.contains(message[0] + message[1])):
         telegram_mess.send_message(message[0] + '\n' + message[1])
         file.append(message[0] + message[1])
-telegram_mess.send_message(link)
+if (messages): telegram_mess.send_message(link)
