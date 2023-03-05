@@ -48,7 +48,6 @@ def getMessages():
 
     # Get the text content of the <span> element and convert it to an integer
     notification_number = int(span_element.text)
-    print("The number of notificaiton is ", notification_number)
 
     if notification_number > 0:
         span_element.click()
@@ -75,7 +74,7 @@ def getMessages():
                 
 
     # Print the title of the dashboard page to confirm login
-    print(driver.title)
+    # print(driver.title)
 
     # Close the webdriver
     driver.quit()
